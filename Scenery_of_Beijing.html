@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>向全世界介绍北京</title>
+    <link rel="shortcut icon"
+        href="https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1705058897936/icon.png">
+    <script type="text/javascript" charset="utf-8"
+        src="https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1710335452218/L2Dwidget.min.txt"></script>
+    <link rel="stylesheet"
+        href="https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1711160138902/loading.css">
+    <link rel="stylesheet" href="https://dragonfly.kesug.com/css/public.css">
+    <link rel="stylesheet" href="https://dragonfly.kesug.com/css/animate.css">
+    <script>
+        function redirect(protocol, url) {
+            window.location.href = protocol + '://' + url;
+        };
+        function changePage(url) {
+            window.location.href = new URL(url, document.baseURI).href;
+        }
+    </script>
+    <style>
+        .biliVideo {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .box1 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: 20px auto;
+            background-color: #f1f0f0;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+
+        #text1 {
+            box-sizing: border-box;
+            padding: 50px;
+            margin-right: 2%;
+            width: 40%;
+        }
+
+        #text2 {
+            box-sizing: border-box;
+            padding: 50px;
+            margin-left: 2%;
+            width: 60%;
+        }
+
+        #img1 {
+            width: 55%;
+            height: auto;
+            margin-right: 3%;
+        }
+
+        #img2 {
+            width: 35%;
+            box-sizing: border-box;
+            margin-right: 2%;
+        }
+        .backTop {
+            position: fixed;
+            bottom: 250px;
+            right: 0;
+            margin-right: 20px;
+            z-index: 999;
+            width: 35px;
+            height: 35px;
+            background-color: deepskyblue;
+            line-height: 35px;
+            text-align: center;
+            font-size: 14px;
+            color: white;
+            border-radius: 50%;
+            transition: all linear 0.5s;
+            cursor: pointer;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!--加载-->
+    <div class="loading">
+        <svg class="svg" viewbox='0 0 50 50'>
+            <circle class="circle" r='25' cx='25' cy='25'></circle>
+        </svg>
+        <p class="p">LOADING</p>
+    </div>
+    <!--顶部按钮-->
+    <div class="backTop" id="backTop">Top</div>
+    <!--背景-->
+    <div class="background"></div>
+    <!--顶部-->
+    <div id="top-bar">
+        <nav>
+            <ul>
+                <li><a href="./Introduction_To_Beijing.html">北京简介</a></li>
+                <li><a href="./Scenery_of_Beijing.html">北京风景</a></li>
+                <li><a href="./beijing_cuisine.html">北京美食</a></li>
+                <li><a href="./about.html">关于</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h3 class="h3Title">向世界介绍北京</h3>
+    <h4 id="h4Subtitle">蜻蜓网络-项目#001</h4>
+    <!--顶部代码结束-->
+    <div class="sideBar" id="sideBar">
+        <p class="subtitle" onclick="changePage('./Introduction_To_Beijing.html')">北京简介</p>
+        <p class="current_subtitle" onclick="changePage('./Scenery_of_Beijing.html')">北京风景</p>
+        <p class="subtitle" onclick="changePage('./beijing_cuisine.html')">北京美食</p>
+        <p class="subtitle" onclick="changePage('./about.html')">关于</p>
+    </div>
+    <div class="container">
+        <iframe src="//player.bilibili.com/player.html?aid=45430348&bvid=BV1Nb411q7JR&cid=79543443&p=1" scrolling="no"
+            border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="60%" height="400px"
+            class="biliVideo"> </iframe>
+        <!--第一部分开始-->
+        <div class="box1" id="box1" animationClass="fade-in-right">
+            <img src="https://dragonfly.kesug.com/api/get_file.php?file=tian_an_men.jpeg" id="img1"
+                onclick="redirect('https','dragonfly.kesug.com/api/get_file.php?file=tian_an_men.webp')">
+            <div id="text1">
+                <p style="text-align: center;font-size: 20px;">天安门</p>
+                <p class="par">
+                    天安门（Tian'anmen），坐落在中华人民共和国首都北京市的中心、故宫的南端，与天安门广场以及人民英雄纪念碑、毛主席纪念堂、人民大会堂、中国国家博物馆隔长安街相望，占地面积4800平方米，以杰出的建筑艺术和特殊的政治地位为世人所瞩目。
+                </p>
+            </div>
+        </div>
+        <!--第一部分结束-->
+        <!--第二部分开始-->
+        <div class="box1" id="box2" animationClass="fade-in-left">
+            <div id="text2">
+                <p style="text-align: center;font-size: 20px;">故宫</p>
+                <p class="par">
+                    北京故宫（The Imperial
+                    Palace）是中国明清两代的皇家宫殿，旧称紫禁城，位于北京中轴线的中心。故宫以三大殿为中心，占地面积约72万平方米，建筑面积约15万平方米，有大小宫殿七十多座，相传故宫一共有9999.5间，实际据1973年专家现场测量故宫有房间8707间。
+                </p>
+                <p style="text-align: center;font-size: 20px">历史信息</p>
+                <p class="par">
+                    故宫于明永乐四年（1406年）开始建设，以南京故宫为蓝本营建，到永乐十八年（1420年）建成，成为明清两朝二十四位皇帝的皇宫。民国十四年国庆节（1925年10月10日）故宫博物院正式成立开幕。北京故宫南北长961米，东西宽753米，四面围有高10米的城墙，城外有宽52米的护城河。故宫有四座城门，南面为午门，北面为神武门，东面为东华门，西面为西华门。城墙的四角，各有一座风姿绰约的角楼，民间有九梁十八柱七十二条脊之说，形容其结构的复杂。
+                </p>
+            </div>
+            <img src="https://dragonfly.kesug.com/api/get_file.php?file=gu_gong.webp" id="img2"
+                onclick="redirect('https','dragonfly.kesug.com/api/get_file.php?file=gu_gong.webp')">
+        </div>
+        <!--第二部分结束-->
+    </div>
+    <!--回到顶部-->
+    <script>
+        const backTop = document.querySelector('#backTop');
+        window.addEventListener('scroll',function(){
+            const n = document.documentElement.scrollTop;
+            backTop.style.opacity = n >= 300 ? 1 : 0;
+        })
+        backTop.addEventListener('click',function(){
+            document.documentElement.scrollTop = 0;
+        })
+    </script>
+    <!--控制排版-->
+    <script>
+        const sideBar = document.getElementById('sideBar');
+        sideBar.style.height = window.innerHeight - 50 + 'px';
+    </script>
+    <!--载入动画-->
+    <script>
+        const loading = {
+            container: document.querySelector(".loading"),
+            in(target) {
+                this.container.classList.remove("loading_out");
+                setTimeout(() => {
+                    window.location.href = target;
+                }, 1000)
+            },
+            out() {
+                this.container.classList.add("loading_out");
+            }
+        };
+        window.addEventListener("load", () => {
+            loading.out();
+            //动画懒"懒"加载
+            const ob = new IntersectionObserver((entries) => {
+                for (let entry of entries) {
+                    if (entry.isIntersecting) {
+                        const ele = entry.target;
+                        ele.classList.add(ele.getAttribute('animationClass'));
+                        ob.unobserve(ele);
+                    }
+                }
+            }, {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0
+            })
+            const elements = document.querySelectorAll('[animationClass]');
+            elements.forEach(ele => {
+                ob.observe(ele);
+            })
+        })
+    </script>
+    <script src="https://dragonfly.kesug.com/js/white_cat_pet.js"></script>
+</body>
+
+</html>
