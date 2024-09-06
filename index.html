@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>向全世界介绍北京-项目编号#001</title>
+    <link rel="shortcut icon" href="https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1705058897936/icon.png">
+    <link rel="stylesheet" href = "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1711160138902/loading.css">
+</head>
+<body>
+    <div class="loading">
+        <svg class="svg" viewbox='0 0 50 50'>
+            <circle class="circle" r='25' cx='25' cy='25'></circle>
+        </svg>
+        <p class="p">LOADING</p>
+    </div>
+    <script>
+        const loading = {
+            container: document.querySelector(".loading"),
+            in(target) {
+                this.container.classList.remove("loading_out");
+                setTimeout(() => {
+                    window.location.href = 'https://'+target;
+                }, 1000)
+            },
+            out() {
+                this.container.classList.add("loading_out");
+            }
+        };
+        window.addEventListener("load", () => {
+            loading.out();
+        })
+        setTimeout(function(){
+            loading.in('dragonfly.kesug.com/projects/001/Introduction_To_Beijing.html');
+        },1000);
+    </script>
+</body>
+</html>
