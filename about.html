@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>向全世界介绍北京</title>
+    <link rel="shortcut icon"
+        href="https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1705058897936/icon.png">
+    <script type="text/javascript" charset="utf-8"
+        src="https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1710335452218/L2Dwidget.min.txt"></script>
+    <link rel="stylesheet"
+        href = "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1711160138902/loading.css">
+        <link rel="stylesheet"
+        href="https://dragonfly.kesug.com/css/public.css">
+    <script>
+        function redirect(protocol, url) {
+            window.location.href = protocol + '://' + url;
+        };
+        function changePage(url) {
+            window.location.href = new URL(url, document.baseURI).href;
+        };
+        function comment() {
+            var comment = prompt('请输入您的评论');
+            var formData = new FormData();
+            formData.append('content',comment);
+            if(comment!==null){
+                fetch('https://dragonfly.kesug.com/api/comment.php',{
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response=>response.json())
+                    .then(data => {
+                        if(data.success){
+                            alert('提交成功!');
+                            window.location.href='https://dragonfly.kesug.com/projects/001/about.html';
+                        }
+                    })
+                    .catch(error => {
+                        alert(error.message);
+                    })
+            }
+        };
+    </script>
+    <style>
+        .box1 {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #f1f0f0;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        a {
+            text-decoration: none;
+            color: skyblue;
+        }
+        .backTop {
+            position: fixed;
+            bottom: 250px;
+            right: 0;
+            margin-right: 20px;
+            z-index: 999;
+            width: 35px;
+            height: 35px;
+            background-color: deepskyblue;
+            line-height: 35px;
+            text-align: center;
+            font-size: 14px;
+            color: white;
+            border-radius: 50%;
+            transition: all linear 0.5s;
+            cursor: pointer;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!--加载-->
+    <div class="loading">
+        <svg class="svg" viewbox='0 0 50 50'>
+            <circle class="circle" r='25' cx='25' cy='25'></circle>
+        </svg>
+        <p class="p">LOADING</p>
+    </div>
+    <!--顶部按钮-->
+    <div class="backTop" id="backTop">Top</div>
+    <!--背景-->
+    <div class="background"></div>
+    <!--顶部-->
+    <div id="top-bar">
+        <nav>
+            <ul>
+                <li><a onclick="changePage('./Introduction_To_Beijing.html')">北京简介</a></li>
+                <li><a onclick="changePage('./Scenery_of_Beijing.html')">北京风景</a></li>
+                <li><a onclick="changePage('./beijing_cuisine.html')">北京美食</a></li>
+                <li><a onclick="changePage('./about.html')">关于</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h3 class="h3Title">向世界介绍北京</h3>
+    <h4 id="h4Subtitle">蜻蜓网络-项目#001</h4>
+    <!--顶部代码结束-->
+    <div class="sideBar" id="sideBar">
+        <p class="subtitle" onclick="changePage('./Introduction_To_Beijing.html')">北京简介</p>
+        <p class="subtitle" onclick="changePage('./Scenery_of_Beijing.html')">北京风景</p>
+        <p class="subtitle" onclick="changePage('./beijing_cuisine.html')">北京美食</p>
+        <p class="current_subtitle" onclick="changePage('./about.html')">关于</p>
+    </div>
+    <div class="container">
+        <!--第一部分开始-->
+        <div class="box1" id="box1">
+            <p style="text-align: center;font-size: 20px;">「关于 与 鸣谢」</p>
+            <p class="par">使用的语言: <a href="https://baike.baidu.com/item/HTML/97049">HTML</a> <a href="https://baike.baidu.com/item/JavaScript/321142">JavaScript</a> <a href="https://baike.baidu.com/item/PHP/9337">PHP</a></p>
+            <p class="par">部分内容支持出自一下视频: <a href="https://www.bilibili.com/video/BV1Nk4y1Q7pk">页面内跳转动画</a> <a href="https://www.bilibili.com/video/BV1jj411P7Yp">前端基础学习</a> <a href="https://www.bilibili.com/video/BV1qe411o7eL">图片懒加载</a> <a href="https://www.bilibili.com/video/BV1V24y1j7JN">CSS卡片效果</a></p>
+            <p class="par">/api/get_file.php负责获取文件并通过Location头返回给前端</p>
+            <p class="par">邮箱: lqtmcstudio@126.com</p>
+            <p class="par">参考资料: <a href="https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E5%B8%82/126069">北京市-百度百科</a> <a href="https://zhuanlan.zhihu.com/p/408981381">北京美食排行榜-知乎</a> <a href="https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E5%8D%81%E5%85%AD%E6%99%AF/4131825">北京十六景 - 百度百科</a></p>
+            <p class="par">使用原生Javascript. PHP版本 8.2 IntersectionObserverAPI</p>
+            <p class="par">IFRAME内嵌的视频(北京风景): <a href="https://www.bilibili.com/video/BV1Nb411q7JR">北京风景 - B站</a></p>
+            <p class="par">左下角2D形象: Live2D(<a href="https://unpkg.com/live2d-widget-model-tororo@1.0.5/assets/tororo.model.json">模型Json</a> <a href="https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1710335452218/L2Dwidget.min.txt">L2Dwidget个人镜像源(自用镜像源)</a>)</p> 
+            <p class="par">右下角回到顶部按钮: <a href="https://blog.csdn.net/m0_55392280/article/details/134363273">回到顶部判断Javascript</a></p>
+            <p class="par" style="text-align: right;">北京市理工大学附属中学分校 - 初一四班 - 臧泽瑞 - 制作</p>
+            <p class="par" style="text-align: right;">2024.3.23</p>
+            <p class="par" style="text-align: center">感谢各位评委老师的观看!^_^</p>
+            <p class="par">给个评价吧:<a onclick="comment()" style="user-select: none;cursor: pointer;">点我评价(PHP)</a></p>
+        </div>
+        <!--第一部分结束-->
+        <!--第二部分开始-->
+        <div class="box1" id="box1">
+            <p class="par" style="text-align: center;">评论</p>
+            <ul id="comments_container">
+            </ul>
+        </div>
+        <div class="box1" id="box2">
+            <p class="par" style="text-align: center;">建议缩放比例</p>
+            <ul id="img_container">
+                <img src="https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1725597648179/1.png" width="80%">
+            </ul>
+        </div>
+        <!--第二部分结束-->
+    </div>
+    <!--回到顶部-->
+    <script>
+        const backTop = document.querySelector('#backTop');
+        window.addEventListener('scroll',function(){
+            const n = document.documentElement.scrollTop;
+            backTop.style.opacity = n >= 300 ? 1 : 0;
+        })
+        backTop.addEventListener('click',function(){
+            document.documentElement.scrollTop = 0;
+        })
+    </script>
+    <!--同一设置a标签-->
+    <script>
+        const aElements = document.querySelectorAll('a');
+        aElements.forEach(function(aElement) {
+            aElement.target = '_blank';
+        })
+    </script>
+    <!--控制排版-->
+    <script>
+        const sideBar = document.getElementById('sideBar');
+        sideBar.style.height = window.innerHeight - 50 + 'px';
+    </script>
+    <!--载入动画-->
+    <script>
+        const loading = {
+            container: document.querySelector(".loading"),
+            in(target) {
+                this.container.classList.remove("loading_out");
+                setTimeout(() => {
+                    window.location.href = target;
+                }, 1000)
+            },
+            out() {
+                this.container.classList.add("loading_out");
+            }
+        };
+        window.addEventListener("load", () => {
+            loading.out();
+        })
+    </script>
+    <!--评论区-->
+    <script>
+        fetch('https://dragonfly.kesug.com/api/comments.json')
+            .then(response=>response.json())
+            .then(data => {
+                const comments_container = document.getElementById('comments_container');
+                for(var i=0;i<data.length;i++) {
+                    var comment_ele = document.createElement('li');
+                    comment_ele.classList.add('par');
+                    comment_ele.innerText = data[i].comment;
+                    comments_container.appendChild(comment_ele);
+                }
+            })
+            .catch(error=>console.log(error.message))
+    </script>
+    <script src="https://dragonfly.kesug.com/js/white_cat_pet.js"></script>
+</body>
+
+</html>
